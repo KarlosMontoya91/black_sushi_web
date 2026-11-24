@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e5322b">
+  <meta name="description" content="Black Sushi Asian Cuisine en Santa Catarina, Nuevo León. Conoce la promo de sushi 2x1, consulta la carta y elige cómo pedir o llegar al restaurante.">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Black Sushi Asian Cuisine | Sushi 2x1 en Santa Catarina</title>
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+  <script defer src="motion.js"></script>
+</head>
+<body>
+  <a class="skip pill" href="#inicio">Saltar al contenido</a>
+  <div class="loader" aria-hidden="true" hidden>
+    <div class="loader-inner">
+      <svg viewBox="0 0 240 175" fill="none">
+        <g fill="#fff3df" stroke="#171313" stroke-width="6"><path d="M38 89c1-17 16-26 39-27l81-4c26-1 41 8 46 28l7 25c4 20-17 32-43 34l-91 3c-28 0-44-12-43-30z"/></g>
+        <g style="--from:0"><path fill="#e9a54a" stroke="#171313" stroke-width="5" d="M78 73c-11-14 9-26 21-18 9-12 43-12 51 0 16-4 28 4 19 15l-18 8z"/></g>
+        <g style="--from:-81px" stroke="#171313" stroke-width="6" stroke-linejoin="round">
+          <path fill="#fb987b" d="M18 78c5-13 19-37 36-41l122-13c20-2 35 10 44 27l8 19c4 12-10 20-21 15l-20-8c-13-5-25-5-39-4L80 84c-17 3-28 14-45 19-16 5-26-10-17-25z"/>
+          <path d="M43 73c11-11 17-13 30-14m48 2 36-8m20-11 19 5" stroke="#fff3df" stroke-width="4" stroke-linecap="round"/>
+        </g>
+        <g style="--from:-65px"><path fill="#171313" d="M105 32l36-4 11 115-37 5z"/><path d="M115 41l10 93m5-98 11 96" stroke="#6e6255" stroke-width="2" stroke-dasharray="9 6"/></g>
+      </svg>
+      <strong class="display">Black Sushi</strong>
+    </div>
+  </div>
+  <header class="nav">
+    <a href="#inicio" class="brand"><span class="brand-stamp" lang="ja" aria-hidden="true">寿司</span><strong>BLACK SUSHI</strong></a>
+    <nav class="nav-links" aria-label="Navegación principal">
+      <a class="pill" href="#menu">Menú</a>
+      <a class="pill" href="#promocion">2x1</a>
+      <a class="pill" href="#visitar">Cómo llegar</a>
+    </nav>
+    <a class="pill dark" href="#pedidos" data-order>Pedir</a>
+  </header>
+
+  <main id="inicio" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-frame" aria-hidden="true">
+        <div class="side left"><span>Black Sushi</span><span>Asian Cuisine</span></div>
+        <div class="side right"><span>Nuevo León</span><span>Santa Catarina</span></div>
+      </div>
+      <canvas class="petals back" aria-hidden="true"></canvas>
+      <canvas class="petals middle" aria-hidden="true"></canvas>
+      <canvas class="petals front" aria-hidden="true"></canvas>
+      <div class="hero-top"><p class="hero-kicker"><span aria-hidden="true">✦</span> Asian Cuisine · Santa Catarina, N.L.</p><button type="button" class="motion-toggle" aria-label="Pausar animaciones" aria-pressed="false" hidden><span aria-hidden="true">Ⅱ</span></button></div>
+      <div class="hero-stage">
+        <h1 id="hero-title" class="hero-title display"><span>BLACK</span> <span>SUSHI</span></h1>
+        <div class="hero-art">
+          <div class="hero-photo-frame"><img src="assets/sushi.webp" alt="Rollo de sushi de Black Sushi servido en una charola" width="429" height="238" fetchpriority="high"></div>
+          <div class="chop left" data-drag aria-hidden="true"></div>
+          <div class="chop right" data-drag aria-hidden="true"></div>
+          <a class="seal" href="#promocion">
+            <svg viewBox="0 0 110 110" aria-hidden="true"><defs><path id="seal-path" d="M55,55m-39,0a39,39 0 1,1 78,0a39,39 0 1,1 -78,0"/></defs><text><textPath href="#seal-path" textLength="243" lengthAdjust="spacingAndGlyphs">BLACK SUSHI • SANTA CATARINA • </textPath></text></svg>
+            <strong>2x1</strong><span class="sr-only">. Ver promoción de sushi</span>
+          </a>
+          <div class="soy" aria-hidden="true"></div>
+        </div>
+      </div>
+      <div class="hero-foot">
+        <p>Sushi, ramen y cocina asiática en Santa Catarina.</p>
+        <div class="hero-actions"><a class="pill" href="#menu">Ver menú</a><a class="pill gold" href="#pedidos" data-order>Pedir en línea</a></div>
+      </div>
+    </section>
+
+    <div class="ribbons" aria-hidden="true"><div class="strip"><div class="loop" id="food-loop"></div></div><div class="strip reverse"><div class="loop" id="reverse-loop"></div></div></div>
+
+    <section class="day" id="promocion" aria-labelledby="promo-title">
+      <div class="day-sticky">
+        <div class="day-content">
+          <div class="day-copy">
+            <p class="day-eyebrow">Promoción</p>
+            <h2 id="promo-title" class="day-hour display">SUSHI 2x1</h2>
+            <p class="day-description">Pregunta qué rollos participan y cómo aplica la promoción al hacer tu pedido.</p>
+            <a class="pill gold" href="https://wa.me/528138577704?text=Hola%2C%20Black%20Sushi.%20%C2%BFMe%20comparten%20los%20rollos%20y%20las%20condiciones%20de%20la%20promoci%C3%B3n%202x1%3F">Consultar el 2x1</a>
+          </div>
+          <div class="day-pictures" aria-hidden="true">
+            <img class="day-photo" src="assets/rollos.webp" alt="" loading="lazy" width="425" height="283">
+            <img class="day-photo" src="assets/rollo-dorado.webp" alt="" loading="lazy" width="466" height="208">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panorama" aria-labelledby="room-title">
+      <div class="panorama-sticky">
+        <div class="room-track" aria-hidden="true">
+          <img src="assets/fachada.webp" alt="" width="426" height="320" loading="lazy">
+          <img src="assets/mesa.webp" alt="" width="239" height="320" loading="lazy">
+          <img src="assets/rollo-casa.webp" alt="" width="590" height="332" loading="lazy">
+        </div>
+        <div class="room-shade"></div>
+        <header class="room-copy">
+          <p class="jp" lang="ja" aria-hidden="true">いただきます</p>
+          <h2 id="room-title" class="display">¡Buen provecho!</h2>
+          <p>Visítanos en Av. Perimetral Norte o pide para disfrutar en casa.</p>
+        </header>
+      </div>
+    </section>
+
+    <section class="menu" id="menu" aria-labelledby="menu-title">
+      <header class="menu-intro">
+        <h2 class="display" id="menu-title">Menú de la casa</h2>
+        <p>Explora los platillos y consulta la carta en línea para conocer precios y disponibilidad.</p>
+      </header>
+      <div class="menu-word display" aria-hidden="true">メニュー</div>
+      <div class="menu-track" role="region" aria-label="Platillos de Black Sushi" tabindex="0">
+        <article class="menu-card" style="--tilt:-4deg"><img src="assets/rollos.webp" alt="" loading="lazy" width="425" height="283"><div class="card-copy"><h3>Rollos de sushi</h3></div></article>
+        <article class="menu-card" style="--tilt:4deg"><img src="assets/ramen.webp" alt="" loading="lazy" width="428" height="315"><div class="card-copy"><h3>Ramen</h3></div></article>
+        <article class="menu-card" style="--tilt:-3deg"><img src="assets/entradas.webp" alt="" loading="lazy" width="255" height="317"><div class="card-copy"><h3>Entradas</h3></div></article>
+        <article class="menu-card" style="--tilt:4deg"><img src="assets/wok.webp" alt="" loading="lazy" width="429" height="321"><div class="card-copy"><h3>Fideos y platos al wok</h3></div></article>
+      </div>
+      <div class="menu-controls" hidden>
+        <button class="pill" type="button" data-step="-1" aria-label="Platillo anterior"><span aria-hidden="true">‹</span></button>
+        <button class="pill" type="button" data-step="1" aria-label="Siguiente platillo"><span aria-hidden="true">›</span></button>
+      </div>
+      <div class="menu-actions">
+        <a class="pill gold" href="https://delivery.softrestaurant.com.mx/restaurante/blacksushiasiancuisine#/menu">Ver carta en línea</a>
+        <a class="pill dark" href="https://wa.me/message/6J3GKWP5A2TZM1">Preguntar por el menú</a>
+      </div>
+    </section>
+
+    <section class="mural" aria-labelledby="mural-title">
+      <header class="mural-head"><h2 id="mural-title" class="display">En Black Sushi</h2><p><a href="https://www.instagram.com/blacksushi_asiancuisine/">Ver Instagram</a></p></header>
+      <div class="mural-photos">
+        <figure class="polaroid" data-drag style="--tilt:-5deg"><img src="assets/fachada.webp" alt="Fachada iluminada de Black Sushi" width="426" height="320" loading="lazy" data-fresh><figcaption>Santa Catarina</figcaption></figure>
+        <figure class="polaroid" data-drag style="--tilt:5deg"><img src="assets/mesa.webp" alt="Mesa del restaurante con bebidas y varios platillos" width="239" height="320" loading="lazy" data-fresh><figcaption>En la mesa</figcaption></figure>
+        <figure class="polaroid" data-drag style="--tilt:-3deg"><img src="assets/rollo-casa.webp" alt="Rollo de sushi servido en un plato negro" width="590" height="332" loading="lazy" data-fresh><figcaption>Rollos de la casa</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="order" id="pedidos" aria-labelledby="order-title">
+      <h2 class="display" id="order-title">Haz tu pedido</h2>
+      <p>Consulta la carta o escríbenos para preguntar por el 2x1.</p>
+      <div class="channel-links">
+        <a class="pill gold" href="https://delivery.softrestaurant.com.mx/restaurante/blacksushiasiancuisine#/menu">Pedir en línea</a>
+        <a class="pill" href="https://wa.me/message/6J3GKWP5A2TZM1">WhatsApp</a>
+        <a class="pill" href="https://www.rappi.com.mx/restaurantes/1930022840-black-sushi-asian-cuisine">Ver en Rappi</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="closing" id="visitar">
+    <div class="strip" aria-hidden="true"><div id="closing-loop" class="loop"></div></div>
+    <div class="closing-grid">
+      <div class="closing-platter" aria-hidden="true"><span class="display" lang="ja">寿司</span><img src="assets/rollo-dorado.webp" alt="" loading="lazy" width="466" height="208"></div>
+      <div class="receipt">
+        <div class="receipt-head"><strong>BLACK SUSHI</strong><b>NL</b></div>
+        <h2>Visítanos</h2>
+        <address>Av. Perimetral Nte. 316, Mártires de Cananea, 66365 Santa Catarina, N.L.</address>
+        <dl><div><dt>Lun. a jue.</dt><dd>14:00 a 23:00</dd></div><div><dt>Vie. a dom.</dt><dd>13:00 a 23:00</dd></div></dl>
+        <p class="hours-note">Horario publicado. Confirma antes de tu visita.</p>
+        <a class="pill dark" href="https://www.google.com/maps/dir/?api=1&amp;destination=Black+Sushi+Asian+Cuisine%2C+Santa+Catarina&amp;destination_place_id=ChIJdXwNS_WXYoYRToqHOH1GvLM">Cómo llegar</a>
+        <div class="receipt-links"><a href="tel:+528138577704">81 3857 7704</a><a href="https://www.instagram.com/blacksushi_asiancuisine/">Instagram</a><a href="https://www.facebook.com/blacksushicuisine/">Facebook</a></div>
+      </div>
+    </div>
+    <p class="preview-note">Propuesta de sitio web · <a href="https://es.restaurantguru.com/Black-Sushi-Asian-Cuisine-Santa-Catarina">Fuente de las fotografías</a></p>
+    <div class="closing-word display" aria-hidden="true">BLACK SUSHI</div>
+  </footer>
+  <div class="fresh" aria-hidden="true">寿司</div>
+  <dialog aria-labelledby="dialog-title">
+    <form method="dialog"><button class="dialog-close" type="submit" aria-label="Cerrar" autofocus>×</button></form>
+    <h2 class="display" id="dialog-title">Haz tu pedido</h2>
+    <div class="channel-links">
+      <a class="pill gold" href="https://delivery.softrestaurant.com.mx/restaurante/blacksushiasiancuisine#/menu">Pedir en línea</a>
+      <a class="pill" href="https://wa.me/message/6J3GKWP5A2TZM1">WhatsApp</a>
+      <a class="pill" href="https://www.rappi.com.mx/restaurantes/1930022840-black-sushi-asian-cuisine">Ver en Rappi</a>
+    </div>
+  </dialog>
+</body>
+</html>
